@@ -1,0 +1,357 @@
+body{
+    background-color: #74e76a;
+}
+header{
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: space-between;
+
+    border-width: 2px;
+    border-style:solid;
+    color:white;
+    border-color: white;
+    border-radius:20px;
+    margin-top:100px;
+    margin-right:300px;
+    margin-left:300px;
+    padding: 10px;
+}
+.header p{
+    font-size: 3.5rem;
+    margin:0px;
+    font-family:Roboto;
+    line-height: 3.2rem;
+}
+
+.input{
+    color:black;
+    display:flex;
+    flex-direction:row;
+    font-size:1.4rem;
+    font-family:Roboto;
+}
+.score{
+    height:150px;
+    width:150px;
+    background-color:white;
+    margin:10px;
+    border-radius:10px;
+    text-align:center;
+}
+
+#cs,#ys {
+    font-size: 4rem;
+    font-weight: 700;
+    color:hsl(229, 25%, 31%);
+    height:80px;
+    width:70px;
+    text-align: center;
+  }
+
+#rule_next{
+    display:flex;
+    align-items:start;
+    position:absolute;
+    right:20px;
+    bottom:30px;
+    justify-content:flex-end;
+    
+}
+
+#rules{
+    padding-right:20px;
+    padding-left:20px;
+    font-size:1.5rem;
+    border-radius:8px;
+    border-style:solid;
+    border-color:white;
+    background-color: #74e76a;
+    color:white;
+    margin-right:20px;
+}
+
+#next{
+    display: none;
+    padding-right:20px;
+    padding-left:20px;
+    font-size:1.5rem;
+    border-radius:8px;
+    border-style:solid;
+    border-color:white;
+    background-color: #74e76a;
+    color:white;
+    margin-right:20px;
+}
+.btns{
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+}
+
+.choice {
+    position: relative;
+  width: 10rem;
+  height: 10rem;
+  background: #fff;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+#winner{
+    display:none;
+    position: absolute;
+    left:278px;
+    bottom:141px;
+    width: 14rem;
+    height: 14rem;
+    background:black;
+    border-radius: 50%;
+    box-shadow: 0 0 0 40px  #217919, 0 0 0 80px #2E9A25, 0 0 0 130px #4bc240;
+    z-index:-1;
+}
+
+#loser{
+    display:none;
+    position: absolute;
+    right:310px;
+    bottom:141px;
+    width: 14rem;
+    height: 14rem;
+    background:black;
+    border-radius: 50%;
+    box-shadow: 0 0 0 40px  #217919, 0 0 0 80px #2E9A25, 0 0 0 130px #4bc240;
+    z-index:-1;
+    
+}
+
+#rock1{
+    border-style: solid;
+    border-color:#0074B6;
+    border-width: 15px;
+    grid-area: rock;
+
+}
+#paper1{
+    border-style: solid;
+    border-color:#FFA943;
+    border-width: 15px;
+    grid-area: paper;
+}
+#scissor1{
+    border-style: solid;
+    border-color:#BD00FF;
+    border-width: 15px;
+    grid-area: scissor;
+}
+
+.line1{
+        width: calc(1.414 * 200px);
+        transform: rotate(45deg);
+        transform-origin: top left;
+        border-top: 20px solid rgb(71, 70, 70);
+        position: absolute;
+        top: 50vh;
+        left: 35vw;
+        box-sizing: border-box;
+        z-index:-1;
+}
+
+.line2{
+    width: calc(1.414 * 200px);
+    transform: rotate(135deg);
+    transform-origin: top left;
+    border-top: 20px solid rgb(71, 70, 70);
+    position: absolute;
+    top: 57vh;
+    right: 14vw;
+    box-sizing: border-box;
+    z-index:-1;
+}
+
+.line3{
+    width: calc(2.3 * 200px);
+    transform: rotate(0deg);
+    transform-origin: top left;
+    border-top: 20px solid rgb(71, 70, 70);
+    position: absolute;
+    top: 50vh;
+    right: 35vw;
+    box-sizing: border-box;
+    z-index:-1;
+}
+
+.btns{
+    margin:80px;
+    height:150px;
+    width:150px;
+    border-radius:50%;
+    border-width:15px;
+}
+
+#scissor{
+    position:absolute;
+    bottom:300px;
+    left:25vw;
+}
+
+#rock{
+    position:absolute;
+    bottom:50px;
+    right:39vw;    
+}
+
+#paper{
+    position:absolute;
+    align-items:center;
+    bottom:300px;
+    right:24vw;
+}
+
+#rules1{
+    display:none;
+    background-color: darkgreen;
+    color:white;
+    height:40vh;
+    width:20vw;
+    position:absolute;
+    right:50px;
+    bottom:100px;
+    border-style:solid;
+    border-color:white;
+    border-width:5px;
+    border-radius: 10px;
+    padding-right:10px;
+} 
+#rules1 h2{
+    text-align: center;
+    font-size: 2rem;
+}
+
+#rules1 ul{
+    list-style-type: square;
+}
+
+#rules1  li::marker {
+    color: yellow;
+    background-size: 1.5rem 1.5rem;
+    line-height: 2rem;
+  }
+
+#cross{
+    position:absolute;
+    right:-40px;
+    bottom:39vh;
+    height:62px;
+    width:62px;
+    border-style:solid;
+    border-radius:30px;
+    border-color: white;
+    border-width:5px;
+    background-color: red;
+    color:white;
+    font-size:2rem;
+    font-weight: bold;
+}
+
+.res1{
+    display:none;
+    color:white;
+    position:absolute;
+    right:42vw;
+    bottom:30vh;
+    font-size:1.5rem;
+    line-height: .8rem;;
+    text-align: center;
+}
+
+.replay{
+    height:50px;
+    width:200px;
+    color:#2d7b26;
+    background-color: white;
+    border-radius: 10px;
+    font-size:1rem;
+}
+
+#results{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    place-items:center;
+    grid-template-areas: 
+    "you-title ai-title"
+    "you-picked ai-picked";
+    max-width:1000px;
+    margin-right:500px;
+    z-index:-1;
+}
+
+.results_heading {
+    font-size: 1.5rem;
+    letter-spacing: 0.1em;
+    padding: 4rem 0 8rem;
+    color:white;
+    position:relative;
+    left:5vw;
+  }
+.results_result {
+    min-width: 8rem;
+    min-height: 8rem;
+    background: #16213d;
+    border-radius: 50%;
+    transform: scale(1.2);
+    z-index: -1;
+    background-color: white;
+    margin-right:500px;
+    position:relative;
+    left:22vw;
+  }
+
+.results__heading:first-of-type {
+    grid-area: you-title;
+  }
+.results__heading:last-of-type {
+    grid-area: ai-title;
+  }
+.results__result:first-of-type {
+    grid-area: you-picked;
+  }
+.results__result:last-of-type {
+    grid-area: ai-picked;
+  }
+#stars{
+    position:absolute;
+    transform: scale(1.2);
+    left: 30vw;
+    top:15vh;
+}
+#trophy{
+    position:absolute;
+    transform: scale(1.2);
+    top:27vh;
+    left:42vw;
+}
+
+#hurray h1 {
+    position:absolute;
+    color:white;
+    bottom:150px;
+    left:28vw;
+    font-size: 8rem;
+}
+
+#hurray h2{
+    position:absolute;
+    color:white;
+    bottom:150px;
+    left:29vw;
+    font-size: 3.7rem;
+
+}
+
+#play{
+    position:absolute;
+    bottom:100px;
+    left:44vw;
+}
