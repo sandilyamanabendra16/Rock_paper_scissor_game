@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta  charset=""UTF-8>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title> Rock_paper_scissor</title> 
+        <link rel="stylesheet"  href="style5.css"
+    </head>
+    <body>
+        <header id="head1">
+            <div class="header" id="cs_ys"> <p> ROCK
+            <br> PAPER
+            <br> SCISSORS</p> </div>
+
+            <div class="input">
+            <p class="score">  COMPUTER SCORE <br> <input id="cs"  placeholder="0"></p>
+            <p class="score">  YOUR<br> SCORE <br> <input id="ys" placeholder="0"></p>
+            </div>
+        </header>
+            <section id="buttons1" class="buttons"> 
+                <button class="btns" id="rock" onclick="dis('rock')">
+                    <div class="choice rock" id="rock1"><img src="rock.png" alt="rock"></div>
+                </button>
+                <button class="btns"  id="scissor" onclick="dis('scissor')">
+                    <div class="choice scissor" id="paper1"><img src="scissor.png" alt="scissor"></div>
+                </button><br>
+                <button class="btns" id="paper" onclick="dis('paper')">
+                    <div class="choice paper" id="scissor1"><img src="paper.png" alt="paper"></div>
+                </button>
+            </section>
+            <section class="win_los">
+                <div id="winner"></div>
+                <div id="loser"></div>
+            </section>
+            <section id="lines">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </section>
+            
+            <div id="win"  class="res1">
+                <h1>YOU WIN</h1>
+                <h2>AGAINST PC</h2>
+                <button class="replay" type="submit"> PLAY AGAIN</button>
+            </div>
+
+            <div id="lost" class="res1">
+                <h1>YOU LOST</h1>
+                <h2>AGAINST PC</h2>
+                <button class="replay" type="submit"> PLAY AGAIN</button>
+            </div>
+
+            <div id="tie" class="res1">
+                <h1>TIE UP</h1>
+                <button class="replay" type="submit"> REPLAY</button>
+            </div>
+            <section id="results" class="hidden">
+                <h2 class="results_heading">You picked</h2>
+                <h2 class="results_heading">The computer picked</h2>
+                <div  class="results_result"></div>
+                <div  class="results_result"></div>
+            </section>
+            <div  id="rules1"display="none">
+                <button id="cross"  type="submit" onclick="closeRules()"> X </button>
+                <h2> Game  Rules</h2>
+                <ul> <li> Rock  beats scissors, scissors beats paper, and  paper beats rock </li> <br>
+                <li> Agree ahead of time whether you'll count off "rock, paper, scissors, shoot" or just  "rock, paper, scissors."</li><br>
+                <li> Use  rock, paper, scissors to settle  minor decisions  or  simply play to pass the time </li><br>
+                <li> If both players lay down the same hand, each player  lays  down another  hand</li>
+                </ul>
+            </div>
+            <section id="rule_next">
+            <button id="rules" type="submit"  onclick="displayText()">RULES</button>
+            <button id="next" type="submit" onclick="displaywin()">NEXT</button>
+            </section>
+            <section id="hurray">
+                <img id="stars" src="Group 5.png">
+                <img id="trophy" src="Vector.png">
+                <h1>HURRAY !!</h1>
+                <h2> YOU WON THE GAME</h2>
+                <button class="replay" id="play" type="submit"> PLAY AGAIN</button>
+            </section>
+        <script src="script5.js"></script>
+    </body>
+</html>
