@@ -103,14 +103,14 @@ function updateUI(result) {
             results.style.display='inline-grid';
             lost.style.display='block';
             buttons1.style.display='none';
-            next.style.display='none';
+            next.style.display='inline-grid';
     
             break;
         case 'draw':
             tieDiv.style.display = 'block';
             results.style.display='inline-grid';
             buttons1.style.display='none';
-            next.style.display='none';
+            next.style.display='inline-grid';
             break;
     }
 
