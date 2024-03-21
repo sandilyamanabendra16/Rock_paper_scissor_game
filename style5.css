@@ -1,27 +1,29 @@
+
 body{
-    background-color: #74e76a;
+    background-color: #8CC461;
+    font-family: 'Poppins';
 }
 header{
     display:flex;
     flex-direction:row;
     align-items: center;
     justify-content: space-between;
-
+    height:8em;
     border-width: 2px;
     border-style:solid;
     color:white;
     border-color: white;
     border-radius:20px;
-    margin-top:100px;
+    margin-top:3.5em;
     margin-right:300px;
     margin-left:300px;
     padding: 10px;
 }
 .header p{
-    font-size: 3.5rem;
+    font-size:2.5em;
     margin:0px;
-    font-family:Roboto;
-    line-height: 3.2rem;
+    font-family: 'Poppins';
+    line-height: 1em;
 }
 
 .input{
@@ -29,24 +31,32 @@ header{
     display:flex;
     flex-direction:row;
     font-size:1.4rem;
-    font-family:Roboto;
+    font-family: 'Poppins';
+    
 }
 .score{
-    height:150px;
+    height:120px;
     width:150px;
     background-color:white;
     margin:10px;
+    line-height:1em;
     border-radius:10px;
     text-align:center;
+    padding-top:10px;
+    
 }
 
 #cs,#ys {
     font-size: 4rem;
     font-weight: 700;
-    color:hsl(229, 25%, 31%);
+    font-family: 'Poppins';
+    color:black;
     height:80px;
     width:70px;
     text-align: center;
+    position:relative;
+    top:30px;
+    left:40px;
   }
 
 #rule_next{
@@ -66,7 +76,7 @@ header{
     border-radius:8px;
     border-style:solid;
     border-color:white;
-    background-color: #74e76a;
+    background-color: #8CC461;
     color:white;
     margin-right:20px;
 }
@@ -79,7 +89,7 @@ header{
     border-radius:8px;
     border-style:solid;
     border-color:white;
-    background-color: #74e76a;
+    background-color: #8CC461;
     color:white;
     margin-right:20px;
 }
@@ -102,26 +112,26 @@ header{
 #winner{
     display:none;
     position: absolute;
-    left:278px;
-    bottom:141px;
+    left:17.3em;
+    bottom:8.1em;
     width: 14rem;
     height: 14rem;
     background:black;
     border-radius: 50%;
-    box-shadow: 0 0 0 40px  #217919, 0 0 0 80px #2E9A25, 0 0 0 130px #4bc240;
+    box-shadow: 0 0 0 40px  #279A27, 0 0 0 80px #31A62F, 0 0 0 130px #66B248;
     z-index:-1;
 }
 
 #loser{
     display:none;
     position: absolute;
-    right:310px;
-    bottom:141px;
+    right:19.3em;
+    bottom:8.1em;
     width: 14rem;
     height: 14rem;
     background:black;
     border-radius: 50%;
-    box-shadow: 0 0 0 40px  #217919, 0 0 0 80px #2E9A25, 0 0 0 130px #4bc240;
+    box-shadow: 0 0 0 40px  #279A27, 0 0 0 80px #31A62F, 0 0 0 130px #66B248;
     z-index:-1;
     
 }
@@ -175,9 +185,9 @@ header{
     transform: rotate(0deg);
     transform-origin: top left;
     border-top: 20px solid rgb(71, 70, 70);
-    position: absolute;
-    top: 50vh;
-    right: 35vw;
+    position: relative;
+    top: 8em;
+    left: 30em;
     box-sizing: border-box;
     z-index:-1;
 }
@@ -211,38 +221,41 @@ header{
 
 #rules1{
     display:none;
-    background-color: darkgreen;
+    background-color: #004429;
     color:white;
-    height:40vh;
+    height:43vh;
     width:20vw;
     position:absolute;
-    right:50px;
-    bottom:100px;
+    right:3em;
+    bottom: 5.5em;
     border-style:solid;
     border-color:white;
     border-width:5px;
     border-radius: 10px;
     padding-right:10px;
+    line-height:1em;
 } 
 #rules1 h2{
     text-align: center;
-    font-size: 2rem;
+    font-size: 2em;
+    padding-bottom:0em;
 }
 
 #rules1 ul{
     list-style-type: square;
+    font-size: .9em;
 }
 
 #rules1  li::marker {
-    color: yellow;
+    color: #FED703;
     background-size: 1.5rem 1.5rem;
-    line-height: 2rem;
+    line-height: 1px;
   }
 
 #cross{
     position:absolute;
     right:-40px;
-    bottom:39vh;
+    bottom:40vh;
     height:62px;
     width:62px;
     border-style:solid;
@@ -269,7 +282,7 @@ header{
 .replay{
     height:50px;
     width:200px;
-    color:#2d7b26;
+    color:#6B6B6B;
     background-color: white;
     border-radius: 10px;
     font-size:1rem;
@@ -328,7 +341,7 @@ header{
 }
 #trophy{
     position:absolute;
-    transform: scale(1.2);
+    transform: scale(1.1);
     top:27vh;
     left:42vw;
 }
@@ -337,21 +350,22 @@ header{
     position:absolute;
     color:white;
     bottom:150px;
-    left:28vw;
-    font-size: 8rem;
+    left:30vw;
+    margin-top:50px;
+    font-size: 6rem;
 }
 
 #hurray h2{
     position:absolute;
     color:white;
     bottom:150px;
-    left:29vw;
-    font-size: 3.7rem;
+    left:30vw;
+    font-size: 3rem;
 
 }
 
 #play{
     position:absolute;
     bottom:100px;
-    left:44vw;
+    left:40vw;
 }

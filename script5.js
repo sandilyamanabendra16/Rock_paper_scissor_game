@@ -44,8 +44,8 @@ function determineResult(user, computer) {
 // Function to update scores and UI
 let userScoreInput = document.querySelector('#ys');
 let computerScoreInput = document.querySelector('#cs');
-userScoreInput.value=0;
-computerScoreInput.value=0;
+userScoreInput.innerText=0;
+computerScoreInput.innerText=0;
 function updateScore(result) {
 
     switch (result) {
@@ -57,8 +57,8 @@ function updateScore(result) {
             break;
     }
 
-    userScoreInput.value = userScore;
-    computerScoreInput.value = computerScore;
+    userScoreInput.innerText = userScore;
+    computerScoreInput.innerText= computerScore;
 }
 
 let results=document.getElementById('results');
@@ -131,8 +131,7 @@ function resetScores() {
     let  computerScore;
     const userScoreInput = document.getElementById('ys');
     const computerScoreInput = document.getElementById('cs');
-    userScoreInput.innerText=0;
-    computerScoreInput.innerText=0;
+
 
     const winDiv = document.getElementById('win');
     const loseDiv = document.getElementById('lost');
@@ -195,8 +194,8 @@ function updateScore(result) {
             break;
     }
 
-    userScoreInput.value = userScore;
-    computerScoreInput.value = computerScore;
+    userScoreInput.innerText = userScore;
+    computerScoreInput.innerText = computerScore;
 }
 
 const resultsDiv = document.querySelectorAll("#results");
