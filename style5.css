@@ -111,7 +111,7 @@ header{
 }
 #winner{
     display:none;
-    position: absolute;
+    position: fixed;
     left:17.3em;
     bottom:8.1em;
     width: 14rem;
@@ -292,9 +292,6 @@ header{
     display:grid;
     grid-template-columns: repeat(2,1fr);
     place-items:center;
-    grid-template-areas: 
-    "you-title ai-title"
-    "you-picked ai-picked";
     max-width:1000px;
     margin-right:500px;
     z-index:-1;
@@ -321,18 +318,6 @@ header{
     left:22vw;
   }
 
-.results__heading:first-of-type {
-    grid-area: you-title;
-  }
-.results__heading:last-of-type {
-    grid-area: ai-title;
-  }
-.results__result:first-of-type {
-    grid-area: you-picked;
-  }
-.results__result:last-of-type {
-    grid-area: ai-picked;
-  }
 #stars{
     position:absolute;
     transform: scale(1.2);
